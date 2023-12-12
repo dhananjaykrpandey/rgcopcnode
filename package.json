@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --mode development"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +13,16 @@
     "compression": "^1.7.4",
     "express": "^4.18.2",
     "webpack": "^5.89.0"
+  },
+  "devDependencies": {
+    "@squoosh/lib": "^0.5.3",
+    "image-minimizer-webpack-plugin": "^3.8.3",
+    "imagemin": "^8.0.1",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^10.0.1",
+    "sharp": "^0.33.0",
+    "svgo": "^3.0.5"
   }
 }

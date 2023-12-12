@@ -4,6 +4,10 @@ const port = 3000;
 const app = express();
 var compress = require('compression');
 app.use(compress()); 
+
+
+
+
  app.use(express.static(path.join(__dirname, '/')));
  app.get('/', async(req, res) => {
     res.sendFile(path.join(__dirname, '/', 'index.html'));
